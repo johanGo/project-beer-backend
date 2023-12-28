@@ -11,7 +11,7 @@ export const getProducts = async(req, res)=>{
         // res.send('obteniendo productos')
         console.log('operacion exitosa')
     } catch (error) {
-        res.status(500).res.json({
+        res.status(500).json({
             message: 'Fallo al momento de traer los datos de los productos',
             error : error.message
         })
